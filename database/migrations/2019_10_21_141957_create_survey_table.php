@@ -19,7 +19,7 @@ class CreateSurveyTable extends Migration
             $table->integer('users_id')->unsigned();
             
             $table->foreign('headers_id')->references('id')->on('survey_headers')->onDelete('cascade')->onUpdate('cascade');
-            $table->foreign('userd_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('users_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }
