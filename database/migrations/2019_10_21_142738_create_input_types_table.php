@@ -14,7 +14,7 @@ class CreateInputTypesTable extends Migration
     public function up()
     {
         Schema::create('input_types', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->string('input_type_name');
 
             $table->timestamps();

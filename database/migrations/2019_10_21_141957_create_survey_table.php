@@ -14,7 +14,7 @@ class CreateSurveyTable extends Migration
     public function up()
     {
         Schema::create('survey', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->integer('headers_id')->unsigned();
             $table->integer('users_id')->unsigned();
             

@@ -14,7 +14,7 @@ class CreateSurveyHeadersTable extends Migration
     public function up()
     {
         Schema::create('survey_headers', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->string('survey_name');
             $table->string('comments')->nullable();
             $table->timestamps();
